@@ -10,9 +10,10 @@ const app = express();
 const strangerThingsRepository = new StrangerThingsRepository(
   strangerThingsDataset,
 );
+
 const strangerThingsService = new StrangerThingsService(
   strangerThingsRepository,
-);
+);    
 
 const PORT = process.env.PORT || 3000;
 app.use(cors());
